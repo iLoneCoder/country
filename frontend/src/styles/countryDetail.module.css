@@ -1,0 +1,63 @@
+.countryCard {
+  max-width: 400px;
+  margin: 2rem auto;
+  background: #ffffff;
+  border-radius: 15px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.3s ease;
+}
+
+.countryCard:hover {
+  transform: translateY(-5px);
+}
+
+.cardHeader {
+  background: #2c3e50;
+  padding: 1.5rem;
+  color: white;
+}
+
+.cardHeader h2 {
+  margin: 0;
+  font-size: 1.8rem;
+  font-weight: 600;
+}
+
+.cardBody {
+  padding: 1.5rem;
+}
+
+.infoRow {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.8rem 0;
+  border-bottom: 1px solid #eee;
+}
+
+.infoRow:last-child {
+  border-bottom: none;
+}
+
+.label {
+  color: #7f8c8d;
+  font-weight: 500;
+  font-size: 0.9rem;
+}
+
+.value {
+  color: #2c3e50;
+  font-weight: 600;
+  font-size: 1rem;
+}
+
+.flagContainer {
+  width: 60px;
+  height: 40px;
+}
+
+.flagContainer img {
+  width: 100%;
+  height: 100%;
+}
