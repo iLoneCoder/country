@@ -31,5 +31,5 @@ app.use((err: any, req: Request, res: Response, next: NextFunction) => {
 })
 
 app.listen(8000, () => {
-  console.log(`ample app listening on port ${PORT}!`)
+  console.log(`app listening on port ${PORT}!`)
 })

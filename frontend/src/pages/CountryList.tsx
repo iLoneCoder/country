@@ -12,7 +12,6 @@ function CountryList() {
     async function fetchCountries() {
       const response = await fetch(`${BASE_URL}/countries`)
       const data = await response.json()
-      console.log(data)
       setCountries(data)
     }
 

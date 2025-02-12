@@ -20,7 +20,6 @@ function CountryDetail() {
         `${BASE_URL}/countries/${country}/${fullName}`
       )
       const data = await response.json()
-      console.log(data)
       setCountryDetails(data)
       setLoading(false)
     }
