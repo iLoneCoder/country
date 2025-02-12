@@ -1,6 +1,6 @@
-# USAGE
+# Project: Country
 
-To run the project, you need to have Node.js installed on your machine. 
+To run the project, you need to have Node.js installed on your machine.
 
 Please clone the project
 
@@ -17,9 +17,11 @@ and follow the instructions below
 ```bash
 cd backend
 ```
+
 ```bash
 npm install
 ```
+
 ```bash
 npm run dev
 ```
@@ -31,6 +33,7 @@ npm run dev
 ```bash
 cd frontend
 ```
+
 ```bash
 npm install
 ```
@@ -38,3 +41,7 @@ npm install
 ```bash
 npm run dev
 ```
+
+# USAGE
+
+Open browser and go to http://localhost:5173
