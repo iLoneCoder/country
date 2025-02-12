@@ -7,5 +7,5 @@ import {
 const router = express.Router()
 
 router.get("/", getAvailableCountries)
-router.get("/:country", getCountryDetails)
+router.get("/:country/:fullName", getCountryDetails)
 export default router

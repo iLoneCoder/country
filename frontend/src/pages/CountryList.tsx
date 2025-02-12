@@ -26,7 +26,10 @@ function CountryList() {
       <ul className={styles.list}>
         {countries?.data.map((country) => (
           <li key={country.countryCode}>
-            <Link to={country.countryCode} className={styles.link}>
+            <Link
+              to={`${country.countryCode}/${country.name}`}
+              className={styles.link}
+            >
               <span>{country.name}</span>
               <span>{country.countryCode}</span>
             </Link>

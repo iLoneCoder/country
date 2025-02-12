@@ -30,12 +30,12 @@ export async function getCountryDetails(
   next: NextFunction
 ) {
   try {
-    const { country } = req.params
+    const { country, fullName } = req.params
     const border = await getBorders(country)
 
-    const population = await getCountryPopulation(border.officialName)
+    const population = await getCountryPopulation(fullName)
 
-    const flag = await getFlag(border.officialName)
+    const flag = await getFlag(fullName)
     res.json({
       status: "success",
       data: {

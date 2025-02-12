@@ -9,15 +9,16 @@ import PopulationChart from "../components/PopulationChart"
 import Button from "../components/utils/Button"
 
 function CountryDetail() {
-  const { country } = useParams()
+  const { country, fullName } = useParams()
   const [countryDetails, setCountryDetails] = useState<CountryDetailsType>()
   const [loading, setLoading] = useState(true)
   const navigate = useNavigate()
 
   useEffect(() => {
-    console.log(country)
     async function fetchCountryDetails() {
-      const response = await fetch(`${BASE_URL}/countries/${country}`)
+      const response = await fetch(
+        `${BASE_URL}/countries/${country}/${fullName}`
+      )
       const data = await response.json()
       console.log(data)
       setCountryDetails(data)
